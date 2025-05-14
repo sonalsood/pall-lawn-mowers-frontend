@@ -120,24 +120,26 @@ Footer – Contact details + quick links
 
 ## Folder Structure
 
-src/
-│
-├── components/
-│ ├── Header.jsx
-│ ├── Footer.jsx
-│ ├── Hero.jsx
-│ ├── ServiceCard.jsx
-│ ├── QuoteForm.jsx
-│ ├── TestimonialSection.jsx
-│ └── GalleryGrid.jsx
-│
-├── pages/
-│ ├── Home.jsx
-│ ├── Services.jsx
-│ ├── About.jsx
-│ ├── Gallery.jsx
-│ ├── Contact.jsx
-│ └── Quote.jsx
-│
-├── App.jsx
-└── index.js
+```
+            src/
+            │
+            ├── components/
+            │ ├── Header.jsx
+            │ ├── Footer.jsx
+            │ ├── Hero.jsx
+            │ ├── ServiceCard.jsx
+            │ ├── QuoteForm.jsx
+            │ ├── TestimonialSection.jsx
+            │ └── GalleryGrid.jsx
+            │
+            ├── pages/
+            │ ├── Home.jsx
+            │ ├── Services.jsx
+            │ ├── About.jsx
+            │ ├── Gallery.jsx
+            │ ├── Contact.jsx
+            │ └── Quote.jsx
+            │
+            ├── App.jsx
+            └── index.js
+```
