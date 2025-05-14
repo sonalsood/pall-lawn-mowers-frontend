@@ -12,7 +12,7 @@ A responsive, professional website built with React and Tailwind CSS for Pall La
 
 ## 🧰 Tech Stack
 
-- **Frontend**: React + Tailwind CSS
+- **Frontend**: React + SASS
 - **Forms & Email**: Formspree or EmailJS
 - **Hosting**: Netlify / Vercel / GitHub Pages
 
