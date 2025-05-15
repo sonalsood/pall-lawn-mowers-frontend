@@ -1,0 +1,8 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.logo {
+  height: 3rem;
+  //   width: max-content;
+}
