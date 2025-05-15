@@ -1,0 +1,61 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.hero {
+  color: $color-white;
+  &__text-container {
+    background: linear-gradient(
+      to bottom,
+      $color-dark-blue 60%,
+      rgba(0, 0, 0, 0) 200%
+    );
+    padding: 3rem 0;
+  }
+
+  &__text-title {
+    text-align: center;
+    margin: auto;
+    width: 85%;
+    font-weight: 700;
+    padding-bottom: 0.75rem;
+    @include headingMob;
+    @include tablet {
+      padding-bottom: 1.5rem;
+      width: 100%;
+      @include TitleTab;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin: auto;
+    font-weight: 300;
+    padding: 0 0.5rem 0.75rem 0.5rem;
+    @include bodyTextMob;
+    @include tablet {
+      padding-bottom: 1.5rem;
+      width: 80%;
+      @include bodyText;
+    }
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    @include bodyTextMob;
+    padding: 0.75rem 2rem;
+    @include tablet {
+      padding: 0.75rem 2.5rem;
+      @include bodyText;
+    }
+  }
+
+  &__img {
+    overflow: hidden;
+    width: 100%;
+  }
+}

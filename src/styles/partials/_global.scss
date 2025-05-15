@@ -57,4 +57,9 @@ button {
   @include tablet {
     @include bodyCopyText;
   }
+
+  &:hover {
+    background-color: $color-light-blue;
+    font-weight: 700;
+  }
 }

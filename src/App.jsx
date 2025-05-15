@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
 import "./App.scss";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <main>
-          <h1>Pall Lawn mowers and renovations</h1>
+          <Hero />
         </main>
       </BrowserRouter>
     </>

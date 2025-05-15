@@ -31,15 +31,15 @@
 }
 
 @mixin TitleTab {
-  line-height: 2.25rem; //36px
-  font-size: 1.875rem; //30px
-  font-weight: 300;
+  line-height: 3rem; //48px
+  font-size: 2.625rem; //42px
+  font-weight: 500;
 }
 
 @mixin TitleMob {
-  line-height: 1.75rem; //28px
-  font-size: 1.375rem; //22px
-  font-weight: 300;
+  line-height: 2.25rem; //36px
+  font-size: 1.875rem; //30px
+  font-weight: 500;
 }
 
 @mixin headingTab {
