@@ -3,14 +3,12 @@ import Logo from "../Logo/Logo";
 import menu from "../../assets/svg/menu-icon.svg";
 import "./Header.scss";
 
-const Header = () => {
+const Header = ({ isMenuPanelOpen, handleTogglePanel }) => {
   return (
     <header>
-      <img
-        className="header__menu-icon-mob"
-        src={menu}
-        alt="menu-icon-mobile"
-      />
+      <button className="header__menu-button" onClick={handleTogglePanel}>
+        <img className="header__menu-icon" src={menu} alt="menu-icon-mobile" />
+      </button>
       <Logo />
       <NavBar />
       <button className="header__button">Get Quote</button>

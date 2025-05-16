@@ -3,9 +3,18 @@
 @use "../../styles/partials/mixins" as *;
 
 .header {
-  &__menu-icon-mob {
+  &__menu-button {
+    background-color: $color-dark-blue;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    height: 2rem;
     @include tablet {
       display: none;
+    }
+
+    &:hover {
+      background-color: $color-dark-blue;
     }
   }
 }
