@@ -3,7 +3,7 @@ import heroImg from "../../assets/images/lawn_4.jpg";
 import "./Hero.scss";
 import { formToJSON } from "axios";
 
-const Hero = () => {
+const Hero = ({ onGetQuoteClick }) => {
   return (
     <section className="hero">
       <div className="hero__text-container">
@@ -16,7 +16,9 @@ const Hero = () => {
           you can count on.
         </p>
         <div className="hero__button-container">
-          <button className="hero__button">Get Quote</button>
+          <button className="hero__button" onClick={onGetQuoteClick}>
+            Get Quote
+          </button>
         </div>
       </div>
       <img className="hero__img" src={heroImg} alt="home-hero-img" />

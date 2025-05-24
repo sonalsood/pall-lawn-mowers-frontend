@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useRef } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Menu from "./components/Menu/Menu";
@@ -11,19 +12,30 @@ function App() {
   const handleTogglePanel = () => {
     setIsMenuPanelOpen((prev) => !prev);
   };
+
+  const formRef = useRef(null);
+
+  const scrollToForm = () => {
+    formRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <BrowserRouter>
         <Header
           isMenuPanelOpen={isMenuPanelOpen}
           handleTogglePanel={handleTogglePanel}
+          onGetQuoteClick={scrollToForm}
         />
         <main>
           {isMenuPanelOpen && <Menu />}
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route
+              path="/"
+              element={<HomePage onGetQuoteClick={scrollToForm} />}
+            />
           </Routes>
-          <QuoteForm />
+          <QuoteForm ref={formRef} />
         </main>
       </BrowserRouter>
     </>

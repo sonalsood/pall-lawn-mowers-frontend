@@ -21,9 +21,11 @@
   &__label {
     @include bodyCopyTextMob;
     padding: 1rem 0 0.25rem 0;
+    font-weight: 700;
 
     @include tablet {
       @include bodyCopyText;
+      font-weight: 700;
     }
   }
 

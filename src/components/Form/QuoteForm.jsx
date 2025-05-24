@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { forwardRef } from "react";
 import emailjs from "emailjs-com";
 import Logo from "../../assets/images/logo_1.png";
 import "./QuoteForm.scss";
@@ -7,7 +8,7 @@ const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const USER_ID = import.meta.env.VITE_EMAILJS_USER_ID;
 
-const QuoteForm = () => {
+const QuoteForm = forwardRef((props, ref) => {
   const [formData, setFormData] = useState({
     fname: "",
     lname: "",
@@ -84,7 +85,7 @@ const QuoteForm = () => {
   };
 
   return (
-    <section className="form-section">
+    <section className="form-section" ref={ref}>
       <div className="form-heading">
         <div className="form-heading__img-container">
           <img className="form-heading__img" src={Logo} alt="website-icon" />
@@ -287,6 +288,6 @@ const QuoteForm = () => {
       </form>
     </section>
   );
-};
+});
 
 export default QuoteForm;

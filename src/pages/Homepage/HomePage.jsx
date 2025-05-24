@@ -1,9 +1,9 @@
 import Hero from "../../components/Hero/Hero";
 
-const HomePage = () => {
+const HomePage = ({ onGetQuoteClick }) => {
   return (
     <>
-      <Hero />
+      <Hero onGetQuoteClick={onGetQuoteClick} />
     </>
   );
 };
