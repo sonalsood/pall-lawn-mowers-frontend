@@ -2,7 +2,8 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Menu from "./components/Menu/Menu";
-import Hero from "./components/Hero/Hero";
+import QuoteForm from "./components/Form/QuoteForm";
+import HomePage from "./pages/Homepage/HomePage";
 import "./App.scss";
 
 function App() {
@@ -19,7 +20,10 @@ function App() {
         />
         <main>
           {isMenuPanelOpen && <Menu />}
-          <Hero />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+          <QuoteForm />
         </main>
       </BrowserRouter>
     </>

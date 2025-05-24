@@ -43,14 +43,14 @@
 }
 
 @mixin headingTab {
-  line-height: 1.875rem; //30px
-  font-size: 1.5rem; //24px
+  line-height: 2.25rem; //36px
+  font-size: 1.875rem; //30px
   font-weight: 500;
 }
 
 @mixin headingMob {
-  line-height: 1.875rem; //24px
-  font-size: 1.5rem; //18px
+  line-height: 1.875rem; //30px
+  font-size: 1.5rem; //24px
   font-weight: 500;
 }
 
