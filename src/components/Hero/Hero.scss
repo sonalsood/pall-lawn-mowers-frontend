@@ -57,5 +57,13 @@
   &__img {
     overflow: hidden;
     width: 100%;
+    display: block;
+
+    @include tablet {
+      height: 60vh;
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
   }
 }

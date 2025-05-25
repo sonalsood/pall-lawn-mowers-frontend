@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Menu from "./components/Menu/Menu";
 import QuoteForm from "./components/Form/QuoteForm";
 import HomePage from "./pages/Homepage/HomePage";
+import BannerImage from "./components/BannerImage/BannerImage";
 import "./App.scss";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
             />
           </Routes>
           <QuoteForm ref={formRef} />
+          <BannerImage />
         </main>
       </BrowserRouter>
     </>

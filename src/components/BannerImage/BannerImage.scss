@@ -1,0 +1,23 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.banner {
+  @include tablet {
+    height: 50vh;
+    overflow: hidden;
+  }
+  &__img {
+    overflow: hidden;
+    width: 100%;
+
+    @include tablet {
+      //   height: 50vh;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: bottom;
+      display: block;
+    }
+  }
+}
