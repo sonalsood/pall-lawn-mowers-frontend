@@ -1,6 +1,6 @@
-import "./ServicesHero.scss";
+import "./Review.scss";
 
-const ServicesHero = () => {
+const Review = () => {
   return (
     <section className="services-heading">
       <div className="services-heading__card">
@@ -21,4 +21,4 @@ const ServicesHero = () => {
   );
 };
 
-export default ServicesHero;
+export default Review;

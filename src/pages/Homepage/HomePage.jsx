@@ -1,11 +1,11 @@
 import Hero from "../../components/Hero/Hero";
-import ServicesHero from "../../components/ServicesHero/ServicesHero";
+import Review from "../../components/Review/Review";
 
 const HomePage = ({ onGetQuoteClick }) => {
   return (
     <>
       <Hero onGetQuoteClick={onGetQuoteClick} />
-      <ServicesHero />
+      <Review />
     </>
   );
 };
