@@ -10,6 +10,7 @@
   &__img {
     overflow: hidden;
     width: 100%;
+    display: block;
 
     @include tablet {
       //   height: 50vh;

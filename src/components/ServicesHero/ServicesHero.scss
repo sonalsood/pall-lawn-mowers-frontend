@@ -1,0 +1,55 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.services-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-gray-blue;
+  padding: 0 1rem;
+  padding-bottom: 4rem;
+  @include tablet {
+    padding: 0 1.5rem;
+    padding-bottom: 5rem;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $color-white;
+    border-radius: 1.6rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.06) 0px 6px 12px;
+    margin: -2.5rem 0px;
+    max-width: 70rem;
+    padding: 2.5rem;
+    position: relative;
+    width: 100%;
+  }
+
+  &__text {
+    @include bodyTextBoldMob;
+    color: $color-dark-blue;
+    @include tablet {
+      @include bodyTextBold;
+    }
+  }
+
+  &__author {
+    display: block;
+    text-align: center;
+    color: $color-muted-blue;
+  }
+
+  &__area {
+    @include bodyCopyTextMob;
+    color: $color-dark-blue;
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+    border-top: 2px solid $color-gray-blue;
+    @include tablet {
+      @include bodyCopyText;
+    }
+  }
+}

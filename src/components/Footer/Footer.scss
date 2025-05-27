@@ -1,0 +1,78 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.footer {
+  background-color: $color-dark-blue;
+  color: $color-white;
+  padding: 3rem 1rem 1.5rem 1rem;
+
+  @include tablet {
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 1.5rem;
+  }
+
+  &__heading {
+    @include headingMob;
+    padding-bottom: 0.75rem;
+    color: $color-white;
+
+    @include tablet {
+      @include headingTab;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid $color-gray-blue;
+    font-size: 0.9rem;
+
+    p {
+      color: $color-gray-blue;
+      @include bodyCopyTextMob;
+
+      @include tablet {
+        @include bodyCopyText;
+      }
+    }
+
+    @include tablet {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__item {
+    @include bodyTextMob;
+    padding-bottom: 0.5rem;
+    @include tablet {
+      @include bodyText;
+    }
+  }
+
+  &__logo {
+    padding-bottom: 1.5rem;
+    position: relative;
+    left: -0.25rem;
+  }
+}
