@@ -1,0 +1,84 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.services {
+  text-align: center;
+  padding: 2rem 1rem 3rem 1rem;
+  background-color: $color-light-beige;
+
+  @include tablet {
+    padding: 3rem 1.5rem;
+  }
+
+  &__title {
+    @include headingMob;
+    color: $color-rich-red;
+
+    @include tablet {
+      @include headingTab;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+
+  &__card {
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-white;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.06) 0px 6px 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    justify-content: space-between;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid $color-white;
+    border-radius: 2rem;
+    height: 302px;
+    width: 100%;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+
+  &__label {
+    margin-top: 1rem;
+    color: $color-dark-blue;
+    @include bodyTextBoldMob;
+    @include tablet {
+      @include bodyTextBold;
+    }
+  }
+
+  &__text {
+    margin-top: 0.5rem;
+    color: $color-dark-blue;
+    @include bodyCopyTextMob;
+    @include tablet {
+      @include bodyCopyText;
+    }
+  }
+}

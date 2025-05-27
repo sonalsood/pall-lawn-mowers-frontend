@@ -2,11 +2,11 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
-.services-heading {
+.review {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $color-gray-blue;
+  background: $color-light-beige;
   padding: 0 1rem;
   padding-bottom: 4rem;
   @include tablet {
