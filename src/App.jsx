@@ -30,7 +30,7 @@ function App() {
           onGetQuoteClick={scrollToForm}
         />
         <main>
-          {isMenuPanelOpen && <Menu />}
+          {isMenuPanelOpen && <Menu handleTogglePanel={handleTogglePanel} />}
           <Routes>
             <Route
               path="/"
