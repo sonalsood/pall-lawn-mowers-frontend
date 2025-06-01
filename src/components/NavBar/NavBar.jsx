@@ -44,12 +44,6 @@ const NavBar = () => {
                 <Link to="/commercial-lawn-care">Lawn Care</Link>
               </li>
               <li className="nav__dropdown-item">
-                <Link to="/commercial-yard-cleanup">Spring Yard Cleanup</Link>
-              </li>
-              <li className="nav__dropdown-item">
-                <Link to="/commercial-yard-cleanup">Fall Yard Cleanup</Link>
-              </li>
-              <li className="nav__dropdown-item">
                 <Link to="/commercial-landscaping-design">
                   Landscaping Design
                 </Link>
@@ -84,14 +78,14 @@ const NavBar = () => {
               <li className="nav__dropdown-item">
                 <Link to="/residential-lawn-care">Lawn Mowing</Link>
               </li>
+
               <li className="nav__dropdown-item">
-                <Link to="/residential-snow-removal">Snow Removal</Link>
+                <Link to="/residential-spring-cleanup">
+                  Spring Yard Cleanup
+                </Link>
               </li>
               <li className="nav__dropdown-item">
-                <Link to="/residential-yard-cleanup">Spring Yard Cleanup</Link>
-              </li>
-              <li className="nav__dropdown-item">
-                <Link to="/residential-yard-cleanup">Fall Yard Cleanup</Link>
+                <Link to="/residential-fall-cleanup">Fall Yard Cleanup</Link>
               </li>
               <li className="nav__dropdown-item">
                 <Link to="/residential-landscaping-design">
@@ -104,9 +98,7 @@ const NavBar = () => {
                 </Link>
               </li>
               <li className="nav__dropdown-item">
-                <Link to="/residential-seasonal-maintenance">
-                  Seasonal Maintenance
-                </Link>
+                <Link to="/residential-snow-removal">Snow Removal</Link>
               </li>
             </ul>
           )}

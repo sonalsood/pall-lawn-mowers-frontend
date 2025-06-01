@@ -143,3 +143,5 @@ Footer – Contact details + quick links
             ├── App.jsx
             └── index.js
 ```
+
+npm install yet-another-react-lightbox

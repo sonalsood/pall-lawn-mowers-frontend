@@ -27,30 +27,6 @@ const Menu = ({ isMenuPanelOpen, handleTogglePanel }) => {
               </Link>
             </li>
             <li className="menu__item">
-              <Link to="/commercial-yard-cleanup" onClick={handleClick}>
-                <div className="menu__item-container">
-                  Spring Yard Cleanup
-                  <img
-                    className="menu__item-icon"
-                    src={arrow}
-                    alt="right-arrow-icon"
-                  />
-                </div>
-              </Link>
-            </li>
-            <li className="menu__item">
-              <Link to="/commercial-yard-cleanup" onClick={handleClick}>
-                <div className="menu__item-container">
-                  Fall Yard Cleanup
-                  <img
-                    className="menu__item-icon"
-                    src={arrow}
-                    alt="right-arrow-icon"
-                  />
-                </div>
-              </Link>
-            </li>
-            <li className="menu__item">
               <Link to="/commercial-lanscaping-design" onClick={handleClick}>
                 <div className="menu__item-container">
                   Landscaping Design
@@ -117,7 +93,7 @@ const Menu = ({ isMenuPanelOpen, handleTogglePanel }) => {
               </Link>
             </li>
             <li className="menu__item">
-              <Link to="/residential-yard-cleanup" onClick={handleClick}>
+              <Link to="/residential-spring-cleanup" onClick={handleClick}>
                 <div className="menu__item-container">
                   Spring Yard Cleanup
                   <img
@@ -129,7 +105,7 @@ const Menu = ({ isMenuPanelOpen, handleTogglePanel }) => {
               </Link>
             </li>
             <li className="menu__item">
-              <Link to="/residential-yard-cleanup" onClick={handleClick}>
+              <Link to="/residential-fall-cleanup" onClick={handleClick}>
                 <div className="menu__item-container">
                   Fall Yard Cleanup
                   <img
@@ -168,21 +144,6 @@ const Menu = ({ isMenuPanelOpen, handleTogglePanel }) => {
               <Link to="/residential-snow-removal" onClick={handleClick}>
                 <div className="menu__item-container">
                   Snow Removal
-                  <img
-                    className="menu__item-icon"
-                    src={arrow}
-                    alt="right-arrow-icon"
-                  />
-                </div>
-              </Link>
-            </li>
-            <li className="menu__item">
-              <Link
-                to="/residential-seasonal-maintenance"
-                onClick={handleClick}
-              >
-                <div className="menu__item-container">
-                  Seasonal Maintenance
                   <img
                     className="menu__item-icon"
                     src={arrow}
