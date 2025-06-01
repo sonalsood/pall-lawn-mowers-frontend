@@ -1,6 +1,6 @@
 # 🌱❄️ Pall Lawn Mowers and Renovations – Website Project - Pallscape
 
-A responsive, professional website built with React and Tailwind CSS for Pall Lawn Mowers and Renovations. Designed to showcase residential and commercial services, streamline quote requests, and provide a clean, trustworthy online presence.
+A responsive, professional website built with React and SASS for Pall Lawn Mowers and Renovations. Designed to showcase residential and commercial services, streamline quote requests, and provide a clean, trustworthy online presence.
 
 ---
 

@@ -23,9 +23,69 @@ const Menu = ({ isMenuPanelOpen }) => {
               </Link>
             </li>
             <li className="menu__item">
+              <Link to="/commercial-yard-cleanup">
+                <div className="menu__item-container">
+                  Spring Yard Cleanup
+                  <img
+                    className="menu__item-icon"
+                    src={arrow}
+                    alt="right-arrow-icon"
+                  />
+                </div>
+              </Link>
+            </li>
+            <li className="menu__item">
+              <Link to="/commercial-yard-cleanup">
+                <div className="menu__item-container">
+                  Fall Yard Cleanup
+                  <img
+                    className="menu__item-icon"
+                    src={arrow}
+                    alt="right-arrow-icon"
+                  />
+                </div>
+              </Link>
+            </li>
+            <li className="menu__item">
+              <Link to="/commercial-lanscaping-design">
+                <div className="menu__item-container">
+                  Landscaping Design
+                  <img
+                    className="menu__item-icon"
+                    src={arrow}
+                    alt="right-arrow-icon"
+                  />
+                </div>
+              </Link>
+            </li>
+            <li className="menu__item">
+              <Link to="/commercial-property-renovation">
+                <div className="menu__item-container">
+                  Property Renovation
+                  <img
+                    className="menu__item-icon"
+                    src={arrow}
+                    alt="right-arrow-icon"
+                  />
+                </div>
+              </Link>
+            </li>
+            <li className="menu__item">
               <Link to="/commercial-snow-removal">
                 <div className="menu__item-container">
                   Snow Removal
+                  <img
+                    className="menu__item-icon"
+                    src={arrow}
+                    alt="right-arrow-icon"
+                  />
+                </div>
+              </Link>
+            </li>
+            <li className="menu__item">
+              <Link to="/commercial-seasonal-maintenance">
+                <div className="menu__item-container">
+                  Seasonal Maintenance
                   <img
                     className="menu__item-icon"
                     src={arrow}
@@ -53,9 +113,69 @@ const Menu = ({ isMenuPanelOpen }) => {
               </Link>
             </li>
             <li className="menu__item">
+              <Link to="/residential-yard-cleanup">
+                <div className="menu__item-container">
+                  Spring Yard Cleanup
+                  <img
+                    className="menu__item-icon"
+                    src={arrow}
+                    alt="right-arrow-icon"
+                  />
+                </div>
+              </Link>
+            </li>
+            <li className="menu__item">
+              <Link to="/residential-yard-cleanup">
+                <div className="menu__item-container">
+                  Fall Yard Cleanup
+                  <img
+                    className="menu__item-icon"
+                    src={arrow}
+                    alt="right-arrow-icon"
+                  />
+                </div>
+              </Link>
+            </li>
+            <li className="menu__item">
+              <Link to="/residential-lanscaping-design">
+                <div className="menu__item-container">
+                  Landscaping Design
+                  <img
+                    className="menu__item-icon"
+                    src={arrow}
+                    alt="right-arrow-icon"
+                  />
+                </div>
+              </Link>
+            </li>
+            <li className="menu__item">
+              <Link to="/residential-property-renovation">
+                <div className="menu__item-container">
+                  Property Renovation
+                  <img
+                    className="menu__item-icon"
+                    src={arrow}
+                    alt="right-arrow-icon"
+                  />
+                </div>
+              </Link>
+            </li>
+            <li className="menu__item">
               <Link to="/residential-snow-removal">
                 <div className="menu__item-container">
                   Snow Removal
+                  <img
+                    className="menu__item-icon"
+                    src={arrow}
+                    alt="right-arrow-icon"
+                  />
+                </div>
+              </Link>
+            </li>
+            <li className="menu__item">
+              <Link to="/residential-seasonal-maintenance">
+                <div className="menu__item-container">
+                  Seasonal Maintenance
                   <img
                     className="menu__item-icon"
                     src={arrow}

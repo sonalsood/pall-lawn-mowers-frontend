@@ -44,7 +44,28 @@ const NavBar = () => {
                 <Link to="/commercial-lawn-care">Lawn Care</Link>
               </li>
               <li className="nav__dropdown-item">
+                <Link to="/commercial-yard-cleanup">Spring Yard Cleanup</Link>
+              </li>
+              <li className="nav__dropdown-item">
+                <Link to="/commercial-yard-cleanup">Fall Yard Cleanup</Link>
+              </li>
+              <li className="nav__dropdown-item">
+                <Link to="/commercial-landscaping-design">
+                  Landscaping Design
+                </Link>
+              </li>
+              <li className="nav__dropdown-item">
+                <Link to="/commercial-property-renovation">
+                  Property Renovation
+                </Link>
+              </li>
+              <li className="nav__dropdown-item">
                 <Link to="/commercial-snow-removal">Snow Removal</Link>
+              </li>
+              <li className="nav__dropdown-item">
+                <Link to="/commercial-seasonal-maintenance">
+                  Seasonal Maintenance
+                </Link>
               </li>
             </ul>
           )}
@@ -65,6 +86,27 @@ const NavBar = () => {
               </li>
               <li className="nav__dropdown-item">
                 <Link to="/residential-snow-removal">Snow Removal</Link>
+              </li>
+              <li className="nav__dropdown-item">
+                <Link to="/residential-yard-cleanup">Spring Yard Cleanup</Link>
+              </li>
+              <li className="nav__dropdown-item">
+                <Link to="/residential-yard-cleanup">Fall Yard Cleanup</Link>
+              </li>
+              <li className="nav__dropdown-item">
+                <Link to="/residential-landscaping-design">
+                  Landscaping Design
+                </Link>
+              </li>
+              <li className="nav__dropdown-item">
+                <Link to="/residential-property-renovation">
+                  Property Renovation
+                </Link>
+              </li>
+              <li className="nav__dropdown-item">
+                <Link to="/residential-seasonal-maintenance">
+                  Seasonal Maintenance
+                </Link>
               </li>
             </ul>
           )}

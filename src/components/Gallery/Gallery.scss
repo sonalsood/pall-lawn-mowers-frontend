@@ -1,0 +1,66 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.gallery-section {
+  padding: 0rem 1rem 3rem 1rem;
+  background-color: $color-light-beige;
+  @include tablet {
+    padding: 0rem 1.5rem 3rem 1.5rem;
+  }
+}
+
+.gallery-container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  @include headingMob;
+  color: $color-rich-red;
+
+  @include tablet {
+    @include headingTab;
+  }
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+
+.gallery-toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.see-more-btn {
+  background-color: $color-light-beige;
+  box-shadow: none;
+
+  &:hover {
+    background-color: $color-amber;
+  }
+}
