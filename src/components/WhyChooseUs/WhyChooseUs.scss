@@ -1,0 +1,106 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.why-us {
+  padding: 0rem 1rem 3rem 1rem;
+  background-color: $color-light-beige;
+  @include tablet {
+    padding: 0rem 1.5rem 3rem 1.5rem;
+  }
+
+  &__title {
+    color: $color-rich-red;
+    margin-bottom: 1.5rem;
+    @include headingMob;
+    @include tablet {
+      @include headingTab;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @include tablet {
+      padding: 0;
+      width: 50%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: $color-white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__text {
+    color: $color-dark-blue;
+    @include bodyTextMob;
+    @include tablet {
+      @include bodyText;
+    }
+  }
+
+  &__text-width {
+    @include tablet {
+      width: 50%;
+    }
+  }
+
+  &__img-wrapper {
+    width: 100%;
+    margin-top: 1.5rem;
+
+    @include tablet {
+      width: 50%;
+      display: block;
+      margin-top: 0;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    display: block;
+
+    @include tablet {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text-container {
+    @include tablet {
+      display: flex;
+      gap: 3rem;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__list-container {
+    @include tablet {
+      display: flex;
+      gap: 3rem;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 1.5rem;
+    }
+  }
+}

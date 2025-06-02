@@ -27,7 +27,7 @@ const Menu = ({ isMenuPanelOpen, handleTogglePanel }) => {
               </Link>
             </li>
             <li className="menu__item">
-              <Link to="/commercial-lanscaping-design" onClick={handleClick}>
+              <Link to="/commercial-landscaping-design" onClick={handleClick}>
                 <div className="menu__item-container">
                   Landscaping Design
                   <img
@@ -117,7 +117,7 @@ const Menu = ({ isMenuPanelOpen, handleTogglePanel }) => {
               </Link>
             </li>
             <li className="menu__item">
-              <Link to="/residential-lanscaping-design" onClick={handleClick}>
+              <Link to="/residential-landscaping-design" onClick={handleClick}>
                 <div className="menu__item-container">
                   Landscaping Design
                   <img

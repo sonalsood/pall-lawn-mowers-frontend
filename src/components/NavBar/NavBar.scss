@@ -12,10 +12,10 @@
     display: flex;
     align-items: baseline;
     flex-direction: row;
-    @include bodyCopyTextMob;
+    @include bodyTextMob;
 
     @include tablet {
-      @include bodyCopyText;
+      @include bodyText;
     }
   }
 

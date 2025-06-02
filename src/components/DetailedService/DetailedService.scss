@@ -1,0 +1,60 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.service {
+  padding: 2rem 1rem 3rem 1rem;
+  background-color: $color-light-beige;
+
+  @include tablet {
+    padding: 3rem 1.5rem;
+  }
+
+  &__title {
+    @include headingMob;
+    margin-bottom: 1.5rem;
+    color: $color-rich-red;
+
+    @include tablet {
+      @include headingTab;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    @include tablet {
+      gap: 3rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  &__text {
+    color: $color-dark-blue;
+    @include bodyTextMob;
+    @include tablet {
+      @include bodyText;
+    }
+  }
+}

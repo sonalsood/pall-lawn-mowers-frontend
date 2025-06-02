@@ -15,7 +15,11 @@ const HomePage = ({ onGetQuoteClick }) => {
           you can count on."
         onGetQuoteClick={onGetQuoteClick}
       />
-      <Review />
+      <Review
+        text="“Pall Landscaping completely transformed our backyard—professional, on
+          time, and a pleasure to work with!”"
+        name="Amanda R., Mississauga"
+      />
       <Services />
       <Gallery />
     </>
