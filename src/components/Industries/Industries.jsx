@@ -7,7 +7,7 @@ const industries = [
   "Industrial Parks",
   "Multi-Residential Properties",
   "Municipal Grounds",
-  "Homeowners’ Associations (HOAs)",
+  "Hotels and Resorts",
 ];
 
 const Industries = () => {

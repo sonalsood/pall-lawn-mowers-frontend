@@ -3,11 +3,11 @@
 @use "../../styles/partials/mixins" as *;
 
 .service {
-  padding: 2rem 1rem 3rem 1rem;
+  padding: 1rem 1rem 3rem 1rem;
   background-color: $color-light-beige;
 
   @include tablet {
-    padding: 3rem 1.5rem;
+    padding: 1rem 1.5rem 3rem 1.5rem;
   }
 
   &__title {

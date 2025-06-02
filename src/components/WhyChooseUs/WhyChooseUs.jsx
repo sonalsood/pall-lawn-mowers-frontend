@@ -5,8 +5,8 @@ import insured from "../../assets/svg/certificate.svg";
 import eco from "../../assets/svg/leaf.svg";
 import emergency from "../../assets/svg/support.svg";
 import guarantee from "../../assets/svg/thumbsup.svg";
-import lawn from "../../assets/images/lawn.jpg";
-import mower from "../../assets/images/lawn_8.jpg";
+import lawn from "../../assets/images/lawn.jpg"; //
+import mower from "../../assets/images/lawn_8.jpg"; //
 
 const reasons = [
   { icon: reliable, label: "Reliable scheduling" },
@@ -17,28 +17,19 @@ const reasons = [
   { icon: guarantee, label: "Satisfaction guarantee" },
 ];
 
-const WhyChooseUs = () => {
+const WhyChooseUs = ({ image1, image2, text }) => {
   return (
     <section className="why-us">
       <h2 className="why-us__title">Why Choose Us</h2>
       <div className="why-us__text-container">
-        <p className="why-us__text why-us__text-width">
-          At Pall Landscaping, we specialize in professional commercial lawn
-          care services designed to keep your business exterior clean, healthy,
-          and inviting. From precise mowing and edging to tailored fertilization
-          and weed control, our trained crews ensure your landscape reflects the
-          quality of your brand. Whether it’s an office park, retail plaza, or
-          multi-unit complex, we deliver reliable service schedules,
-          eco-friendly practices, and responsive support—so your property always
-          makes a great first impression.
-        </p>
+        <p className="why-us__text why-us__text-width">{text}</p>
         <div className="why-us__img-wrapper">
-          <img className="why-us__img" src={lawn} alt="company-lawn" />
+          <img className="why-us__img" src={image1} alt="page-image01" />
         </div>
       </div>
       <div className="why-us__list-container">
         <div className="why-us__img-wrapper">
-          <img className="why-us__img" src={mower} alt="lawn-mower" />
+          <img className="why-us__img" src={image2} alt="page-image02" />
         </div>
         <ul className="why-us__list">
           {reasons.map((item, index) => (
