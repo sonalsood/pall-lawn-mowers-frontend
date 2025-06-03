@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import Review from "../../components/Review/Review";
 import DetailedService from "../../components/DetailedService/DetailedService";
@@ -12,7 +13,11 @@ import alert from "../../assets/svg/alert.svg";
 import snow from "../../assets/images/snow_3.jpg";
 import winter from "../../assets/images/snow_7.jpg";
 
-const CommercialSnowRemoval = ({ onGetQuoteClick }) => {
+const CommercialSnowRemovalPage = ({ onGetQuoteClick }) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const serv = [
     {
       image: snowplow,
@@ -58,4 +63,4 @@ const CommercialSnowRemoval = ({ onGetQuoteClick }) => {
   );
 };
 
-export default CommercialSnowRemoval;
+export default CommercialSnowRemovalPage;

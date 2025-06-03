@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import Review from "../../components/Review/Review";
 import DetailedService from "../../components/DetailedService/DetailedService";
@@ -13,6 +14,10 @@ import fall01 from "../../assets/images/fall_3.jpg";
 import fall02 from "../../assets/images/fall_6.jpg";
 
 const ResidentialFallCleanPage = ({ onGetQuoteClick }) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const serv = [
     {
       image: rake,

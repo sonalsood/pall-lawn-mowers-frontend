@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import Review from "../../components/Review/Review";
 import DetailedService from "../../components/DetailedService/DetailedService";
@@ -15,6 +16,10 @@ import bulb from "../../assets/svg/bulb.svg";
 import recycle from "../../assets/svg/recycle.svg";
 
 const CommercialLandscapingPage = ({ onGetQuoteClick }) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const serv = [
     {
       image: blueprint,

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import Review from "../../components/Review/Review";
 import DetailedService from "../../components/DetailedService/DetailedService";
@@ -11,6 +12,10 @@ import lawn from "../../assets/images/lawn_11.jpg";
 import mow from "../../assets/images/lawn_8.jpg";
 
 const ResidentialLawnCarePage = ({ onGetQuoteClick }) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const serv = [
     {
       image: mower,

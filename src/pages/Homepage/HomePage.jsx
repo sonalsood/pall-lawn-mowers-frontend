@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import Review from "../../components/Review/Review";
 import Services from "../../components/Services/Services";
@@ -5,6 +6,10 @@ import Gallery from "../../components/Gallery/Gallery";
 import heroImg from "../../assets/images/lawn_4.jpg";
 
 const HomePage = ({ onGetQuoteClick }) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <>
       <Hero

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import Review from "../../components/Review/Review";
 import DetailedService from "../../components/DetailedService/DetailedService";
@@ -11,7 +12,11 @@ import snowplow from "../../assets/svg/snowplow.svg";
 import snow from "../../assets/images/snow_8.jpg";
 import winter from "../../assets/images/snow_9.jpg";
 
-const ResidentialSnowRemoval = ({ onGetQuoteClick }) => {
+const ResidentialSnowRemovalPage = ({ onGetQuoteClick }) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const serv = [
     {
       image: shovel,
@@ -56,4 +61,4 @@ const ResidentialSnowRemoval = ({ onGetQuoteClick }) => {
   );
 };
 
-export default ResidentialSnowRemoval;
+export default ResidentialSnowRemovalPage;

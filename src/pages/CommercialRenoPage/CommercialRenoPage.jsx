@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import Review from "../../components/Review/Review";
 import DetailedService from "../../components/DetailedService/DetailedService";
@@ -15,6 +16,10 @@ import reno01 from "../../assets/images/reno_4.jpg";
 import reno02 from "../../assets/images/reno_5.jpg";
 
 const CommercialRenoPage = ({ onGetQuoteClick }) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const serv = [
     {
       image: building,

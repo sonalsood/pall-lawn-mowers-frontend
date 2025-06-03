@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import Review from "../../components/Review/Review";
 import DetailedService from "../../components/DetailedService/DetailedService";
@@ -13,6 +14,10 @@ import plants from "../../assets/gallery/photo_5.jpg";
 import pathway from "../../assets/images/pathway.jpg";
 
 const ResidentialLandscapingPage = ({ onGetQuoteClick }) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const serv = [
     {
       image: plant,

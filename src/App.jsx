@@ -9,13 +9,13 @@ import CommercialLawnCarePage from "./pages/CommercialLawnCarePage/CommercialLaw
 import CommercialLandscapingPage from "./pages/CommercialLandscapingPage/CommercialLandscapingPage";
 import CommercialRenoPage from "./pages/CommercialRenoPage/CommercialRenoPage";
 import CommercialSeasonalCarePage from "./pages/CommercialSeasonalCarePage/CommercialSeasonalCarePage";
-import CommercialSnowRemoval from "./pages/CommercialSnowRemoval/CommercialSnowRemoval";
+import CommercialSnowRemovalPage from "./pages/CommercialSnowRemovalPage/CommercialSnowRemovalPage";
 import ResidentialLawnCarePage from "./pages/ResidentialLawnCarePage/ResidentialLawnCarePage";
 import ResidentialSpringCleanPage from "./pages/ResidentialSpringCleanPage/ResidentialSpringCleanPage";
 import ResidentialFallCleanPage from "./pages/ResidentialFallCleanPage/ResidentialFallCleanPage";
 import ResidentialLandscapingPage from "./pages/ResidentialLandscapingPage/ResidentialLandscapingPage";
 import ResidentialRenoPage from "./pages/ResidentialRenoPage/ResidentialRenoPage";
-import ResidentialSnowRemoval from "./pages/ResidentialSnowRemoval/ResidentialSnowRemoval";
+import ResidentialSnowRemovalPage from "./pages/ResidentialSnowRemovalPage/ResidentialSnowRemovalPage";
 import BannerImage from "./components/BannerImage/BannerImage";
 import Footer from "./components/Footer/Footer";
 import "./App.scss";
@@ -68,7 +68,9 @@ function App() {
             />
             <Route
               path="/commercial-snow-removal"
-              element={<CommercialSnowRemoval onGetQuoteClick={scrollToForm} />}
+              element={
+                <CommercialSnowRemovalPage onGetQuoteClick={scrollToForm} />
+              }
             />
             <Route
               path="/commercial-seasonal-maintenance"
@@ -109,7 +111,7 @@ function App() {
             <Route
               path="/residential-snow-removal"
               element={
-                <ResidentialSnowRemoval onGetQuoteClick={scrollToForm} />
+                <ResidentialSnowRemovalPage onGetQuoteClick={scrollToForm} />
               }
             />
           </Routes>

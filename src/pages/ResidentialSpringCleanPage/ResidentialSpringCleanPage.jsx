@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import Review from "../../components/Review/Review";
 import DetailedService from "../../components/DetailedService/DetailedService";
@@ -11,6 +12,10 @@ import spring from "../../assets/images/spring_5.jpg";
 import flower from "../../assets/images/spring_6.jpg";
 
 const ResidentialSpringCleanPage = ({ onGetQuoteClick }) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const serv = [
     {
       image: rake,
