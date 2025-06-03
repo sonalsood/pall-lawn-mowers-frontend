@@ -6,39 +6,37 @@ import Industries from "../../components/Industries/Industries";
 import residentialHeroImg from "../../assets/images/fall_2.jpg";
 import fall from "../../assets/images/fall_4.jpg";
 import mow from "../../assets/images/lawn_9.jpg";
-////
-import mower from "../../assets/svg/lawn-mower.svg";
-import spray from "../../assets/svg/spray-bottle.svg";
+import leaf from "../../assets/svg/leaf.svg";
+import watering from "../../assets/svg/watering.svg";
 import rake from "../../assets/svg/rake.svg";
-import plant from "../../assets/svg/plant.svg";
-import water from "../../assets/svg/water-drop.svg";
-import bug from "../../assets/svg/bug.svg";
-import tree from "../../assets/svg/tree.svg";
+import snowflakes from "../../assets/svg/snowflakes.svg";
+import flower from "../../assets/svg/flower.svg";
+import bucket from "../../assets/svg/bucket.svg";
 
 const CommercialSeasonalCarePage = ({ onGetQuoteClick }) => {
   const serv = [
     {
-      image: mower,
+      image: leaf,
       text: "Spring Cleanup",
     },
     {
-      image: spray,
+      image: watering,
       text: "Summer Maintenance",
     },
     {
-      image: plant,
+      image: rake,
       text: "Fall Cleanup",
     },
     {
-      image: plant,
+      image: snowflakes,
       text: "Winterizing",
     },
     {
-      image: water,
+      image: flower,
       text: "Seasonal Planting",
     },
     {
-      image: bug,
+      image: bucket,
       text: "Debris Removal",
     },
   ];

@@ -4,43 +4,42 @@ import DetailedService from "../../components/DetailedService/DetailedService";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 import Industries from "../../components/Industries/Industries";
 import residentialHeroImg from "../../assets/images/reno_2.jpg";
-////
-import mower from "../../assets/svg/lawn-mower.svg";
-import spray from "../../assets/svg/spray-bottle.svg";
-import rake from "../../assets/svg/rake.svg";
-import plant from "../../assets/svg/plant.svg";
-import water from "../../assets/svg/water-drop.svg";
-import bug from "../../assets/svg/bug.svg";
+import signpost from "../../assets/svg/signpost.svg";
+import paint from "../../assets/svg/paint.svg";
+import alert from "../../assets/svg/alert.svg";
+import rulerpencil from "../../assets/svg/ruler-pencil.svg";
+import building from "../../assets/svg/building.svg";
+import recycle from "../../assets/svg/recycle.svg";
 import tree from "../../assets/svg/tree.svg";
 ////
 import lawn from "../../assets/images/lawn.jpg";
 import mow from "../../assets/images/lawn_8.jpg";
-/////
+////
 
 const CommercialRenoPage = ({ onGetQuoteClick }) => {
   const serv = [
     {
-      image: mower,
+      image: building,
       text: "Exterior Renovation & Facade Upgrades",
     },
     {
-      image: spray,
+      image: rulerpencil,
       text: "Interior Fit-Outs & Layout Redesign",
     },
     {
-      image: plant,
+      image: alert,
       text: "Accessibility & Safety Upgrades",
     },
     {
-      image: plant,
+      image: paint,
       text: "Parking Lot Resurfacing & Line Painting",
     },
     {
-      image: water,
+      image: signpost,
       text: "Signage & Wayfinding Installation",
     },
     {
-      image: bug,
+      image: recycle,
       text: "Energy Efficiency Upgrades",
     },
     {

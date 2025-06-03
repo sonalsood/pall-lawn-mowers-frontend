@@ -4,47 +4,34 @@ import DetailedService from "../../components/DetailedService/DetailedService";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 import Industries from "../../components/Industries/Industries";
 import residentialHeroImg from "../../assets/images/snow_2.jpg";
-////
-import mower from "../../assets/svg/lawn-mower.svg";
-import spray from "../../assets/svg/spray-bottle.svg";
-import rake from "../../assets/svg/rake.svg";
-import plant from "../../assets/svg/plant.svg";
-import water from "../../assets/svg/water-drop.svg";
-import bug from "../../assets/svg/bug.svg";
-import tree from "../../assets/svg/tree.svg";
-////
+import handshake from "../../assets/svg/handshake.svg";
+import snowflakes from "../../assets/svg/snowflakes.svg";
+import shovel from "../../assets/svg/shovel.svg";
+import snowplow from "../../assets/svg/snowplow.svg";
+import alert from "../../assets/svg/alert.svg";
 import snow from "../../assets/images/snow_3.jpg";
-import winter from "../../assets/images/snow_4.jpg";
-/////
+import winter from "../../assets/images/snow_7.jpg";
 
 const CommercialSnowRemoval = ({ onGetQuoteClick }) => {
   const serv = [
     {
-      image: mower,
+      image: snowplow,
       text: "Snow Plowing & Clearing",
     },
     {
-      image: spray,
+      image: shovel,
       text: "Sidewalk & Pathway Shoveling",
     },
     {
-      image: plant,
+      image: snowflakes,
       text: "Salting & De-Icing Services",
     },
     {
-      image: plant,
+      image: alert,
       text: "Emergency Snow Removal",
     },
     {
-      image: water,
-      text: "Snow Hauling & Relocation",
-    },
-    {
-      image: bug,
-      text: "Ice Management & Monitoring",
-    },
-    {
-      image: tree,
+      image: handshake,
       text: "Custom Service Contracts",
     },
   ];
