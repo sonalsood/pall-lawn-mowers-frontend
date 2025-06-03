@@ -11,10 +11,8 @@ import rulerpencil from "../../assets/svg/ruler-pencil.svg";
 import building from "../../assets/svg/building.svg";
 import recycle from "../../assets/svg/recycle.svg";
 import tree from "../../assets/svg/tree.svg";
-////
-import lawn from "../../assets/images/lawn.jpg";
-import mow from "../../assets/images/lawn_8.jpg";
-////
+import reno01 from "../../assets/images/reno_4.jpg";
+import reno02 from "../../assets/images/reno_5.jpg";
 
 const CommercialRenoPage = ({ onGetQuoteClick }) => {
   const serv = [
@@ -61,8 +59,8 @@ const CommercialRenoPage = ({ onGetQuoteClick }) => {
       />
       <DetailedService serv={serv} />
       <WhyChooseUs
-        image1={lawn}
-        image2={mow}
+        image1={reno01}
+        image2={reno02}
         text="At Pall Landscaping, we understand that a well-renovated exterior can completely transform the perception and value of your commercial property. Our team brings deep expertise in upgrading aging or underperforming landscapes into refreshed, functional, and modern outdoor spaces that reflect your brand and meet your tenants' or visitors’ needs. From revitalizing hardscapes and replanting beds to resolving drainage issues and installing updated lighting or signage, we manage renovations with minimal disruption to daily operations. Every project is approached with careful planning, responsive communication, and an eye for both aesthetics and long-term performance—making us a trusted partner in elevating your property's appeal and usability."
       />
       <Industries />
