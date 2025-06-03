@@ -121,9 +121,6 @@ const NavBar = () => {
               <li className="nav__dropdown-item">
                 <Link to="/contact">Contact</Link>
               </li>
-              <li className="nav__dropdown-item">
-                <Link to="/faq">FAQ</Link>
-              </li>
             </ul>
           )}
         </li>

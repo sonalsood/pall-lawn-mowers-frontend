@@ -40,6 +40,7 @@ const AboutUsPage = ({ onGetQuoteClick }) => {
             quality. Our goal is not just to maintain landscapes — but to enrich
             lives, elevate communities, and grow spaces where people feel proud
             to live and work.
+            <br />
           </>
         }
         name="Tajinderpal Singh"

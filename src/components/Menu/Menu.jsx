@@ -182,18 +182,6 @@ const Menu = ({ isMenuPanelOpen, handleTogglePanel }) => {
                 </div>
               </Link>
             </li>
-            <li className="menu__item">
-              <Link to="/faq" onClick={handleClick}>
-                <div className="menu__item-container">
-                  FAQ
-                  <img
-                    className="menu__item-icon"
-                    src={arrow}
-                    alt="right-arrow-icon"
-                  />
-                </div>
-              </Link>
-            </li>
           </ul>
         </div>
       </div>

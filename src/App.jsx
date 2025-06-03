@@ -17,6 +17,7 @@ import ResidentialLandscapingPage from "./pages/ResidentialLandscapingPage/Resid
 import ResidentialRenoPage from "./pages/ResidentialRenoPage/ResidentialRenoPage";
 import ResidentialSnowRemovalPage from "./pages/ResidentialSnowRemovalPage/ResidentialSnowRemovalPage";
 import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
+import ContactUsPage from "./pages/ContactUsPage/ContactUsPage";
 import BannerImage from "./components/BannerImage/BannerImage";
 import Footer from "./components/Footer/Footer";
 import "./App.scss";
@@ -115,9 +116,14 @@ function App() {
                 <ResidentialSnowRemovalPage onGetQuoteClick={scrollToForm} />
               }
             />
+            {/* Company */}
             <Route
               path="/about"
               element={<AboutUsPage onGetQuoteClick={scrollToForm} />}
+            />
+            <Route
+              path="/contact"
+              element={<ContactUsPage onGetQuoteClick={scrollToForm} />}
             />
           </Routes>
           <QuoteForm ref={formRef} />
