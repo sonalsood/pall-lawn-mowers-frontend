@@ -1,0 +1,14 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.about {
+  &__heading {
+    color: $color-dark-blue;
+    @include headingMob;
+    padding-bottom: 1.5rem;
+    @include tablet {
+      @include headingTab;
+    }
+  }
+}

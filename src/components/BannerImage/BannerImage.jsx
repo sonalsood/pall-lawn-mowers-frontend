@@ -39,6 +39,8 @@ const BannerImage = () => {
         return { image: RenoBanner, alt: "Renovation banner" };
       case "/residential-snow-removal":
         return { image: SnowBanner, alt: "Snow banner" };
+      case "/about":
+        return { image: SnowBanner, alt: "Snow banner" };
       default:
         return { image: HomeBanner, alt: "Default banner" };
     }
