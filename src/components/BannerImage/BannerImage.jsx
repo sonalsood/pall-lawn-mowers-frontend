@@ -9,6 +9,8 @@ import SnowBanner from "../../assets/images/snow_6.jpg";
 import SeasonalBanner from "../../assets/images/spring_2.jpg";
 import SpringBanner from "../../assets/images/spring_4.jpg";
 import FallBanner from "../../assets/images/fall_2.jpg";
+import AboutBanner from "../../assets/images/spring_7.jpg";
+import ContactBanner from "../../assets/images/spring_10.jpg";
 
 const BannerImage = () => {
   const location = useLocation();
@@ -40,7 +42,9 @@ const BannerImage = () => {
       case "/residential-snow-removal":
         return { image: SnowBanner, alt: "Snow banner" };
       case "/about":
-        return { image: SnowBanner, alt: "Snow banner" };
+        return { image: AboutBanner, alt: "About banner" };
+      case "/contact":
+        return { image: ContactBanner, alt: "Contact banner" };
       default:
         return { image: HomeBanner, alt: "Default banner" };
     }

@@ -1,0 +1,29 @@
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.contact {
+  &__heading {
+    color: $color-dark-blue;
+    @include headingMob;
+    padding-bottom: 1.5rem;
+    @include tablet {
+      @include headingTab;
+    }
+  }
+
+  &__label {
+    margin-top: 1.5rem;
+    @include bodyTextBoldMob;
+    @include tablet {
+      @include bodyTextBold;
+      text-align: center;
+    }
+  }
+  &__detail {
+    font-weight: 300;
+    @include tablet {
+      text-align: center;
+    }
+  }
+}

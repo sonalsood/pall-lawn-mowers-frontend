@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import Review from "../../components/Review/Review";
 import Gallery from "../../components/Gallery/Gallery";
-import heroImg from "../../assets/images/lawn_4.jpg";
+import heroImg from "../../assets/images/spring_8.jpg";
 import "./AboutUsPage.scss";
 
 const AboutUsPage = ({ onGetQuoteClick }) => {

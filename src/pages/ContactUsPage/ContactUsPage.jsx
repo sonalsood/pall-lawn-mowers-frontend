@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import Review from "../../components/Review/Review";
 import Gallery from "../../components/Gallery/Gallery";
-import heroImg from "../../assets/images/lawn_4.jpg";
-import "../AboutUsPage/AboutUsPage.scss";
+import heroImg from "../../assets/images/spring_9.jpg";
+import "./ContactUsPage.scss";
 
 const ContactUsPage = ({ onGetQuoteClick }) => {
   useEffect(() => {
@@ -21,18 +21,18 @@ const ContactUsPage = ({ onGetQuoteClick }) => {
       <Review
         text={
           <>
-            <div className="about__contact-info">
+            <div className="contact__contact-info">
+              <h2 className="contact__heading">Contact Us</h2>
               <p>
                 Whether you’re ready to start a new landscaping project or just
                 have a question, we’re here to help. Our team is friendly,
                 responsive, and happy to chat!
               </p>
+              <p className="contact__label">📞 Phone: </p>
+              <p className="contact__detail">(647) 996-1001</p>
 
-              <p className="about__contact-label">📞 Phone</p>
-              <p className="about__contact-detail">999-999-9999</p>
-
-              <p className="about__contact-label">✉️ Email</p>
-              <p className="about__contact-detail">service@gdg.com</p>
+              <p className="contact__label">✉️ Email: </p>
+              <p className="contact__detail">info@yourcompany.com</p>
             </div>
           </>
         }
